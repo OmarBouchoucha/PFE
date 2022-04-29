@@ -14,7 +14,8 @@ Number_OF_INTERVALES=[]
 # Create flask app 
 app = Flask(__name__) 
 app.secret_key = "KHHJH546DFSHSSDFHmljmkfj5619"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database/database.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mjsvuyiqfsmiqd:c75a8d390f2f40c387ad8efd06d1b836e3af43919d122d52f386c54eebbe1f6f@ec2-35-168-194-15.compute-1.amazonaws.com:5432/dqlf3j108hq4q'
 app.config ['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PERMANENT_SESSION_LIFETIME'] =  timedelta(days=10)
 
