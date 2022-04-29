@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OFF!</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'login.css')}}">
+
+</head>
+<body>
+    <form class="box" action="#" method="POST">
+        <h5>Are You Sure</h5>
+        <input type="submit"  value="yes">
+        <a href= "{{url_for('command')}}"><h4>Go Back</h4></a>
+      </form>
+</body>
+</html>

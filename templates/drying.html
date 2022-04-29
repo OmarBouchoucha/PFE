@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drying Form</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'login.css')}}">
+  </head>
+  <body>
+
+<form class="box" action="#" method="POST">
+  <h5>{{msg}}</h5>
+  <a href= "{{url_for('command')}}" ><input type="submit"  value="START DRYING"  class="s-btn"></a>
+  <a href= "{{url_for('numberofintervalesforfruits')}}" class="btn"><h3>CHANGE THE VALUE</h3></a>
+  <a href= "{{url_for('fruitgraph')}}" class="btn"><h3>SEE THE VALUE</h3></a>
+  <a href= "{{url_for('command')}}"><h4>Go Back</h4></a>
+</form>
+  </body>
+</html>

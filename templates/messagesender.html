@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Send Message</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'login.css')}}">
+  </head>
+  <body>
+
+<form class="box" action="#" method="post">
+  <h1>Send message </h1>
+  
+  <textarea name="message" maxlength="30" placeholder="Type Here"></textarea>
+
+  <input type="submit"  value="Send">
+  <a href="{{url_for('index')}}"><h4>GO back</h4></a>
+
+</form>
+
+
+  </body>
+</html>
